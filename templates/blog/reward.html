@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+
+{% load staticfiles %}
+
+{% block page-body %}
+
+    <!--<script>-->
+        <!--.div{-->
+        <!--}-->
+    <!--</script>-->
+
+    <div class="reward-info" style="test-indent:25px">
+        <article>
+            <h3>如果觉得本博客的内容不错，不妨小额赞助博主一下，鼓励博主继续写出更多高质量的内容。</h3>
+            <p></p>
+        </article>
+
+    </div>
+    <div class="reward" style="text-align:center">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 alipay-reward" title="支付宝付款码">
+            <figure>
+                <img src="{% static 'blog/img/alipay.jpg' %}" style="width: 250px"/>
+                <figcaption>支付宝</figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4 wechatpay-reward" title="微信付款码">
+            <figure>
+                <img src="{% static 'blog/img/wechatpay.jpg' %}" style="width: 250px"/>
+                <figcaption>微信</figcaption>
+            </figure>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+{% endblock page-body %}
