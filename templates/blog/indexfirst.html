@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 
 {% block main %}
 	{% for post in post_list %}
@@ -12,7 +12,7 @@
 					<span class="post-date"><a href="#"><time class="entry-date" datetime="{{ post.create_date }}">{{ post.create_date }}</time></a></span>
 					<span class="post-author"><a href="#">{{ post.author }}</a></span>
 					<span class="comments-link"><a href="#">4 评论</a></span>
-					<span class="views-count"><a href="#">588 阅读</a></span>
+					<span class="views-count"><a href="{{ post.get_absolute_url }}">{{ post.views }} 阅读</a></span>
 				</div>
 			</header>
 			<div class="entry-content clearfix">
@@ -33,17 +33,17 @@
 		<a href="#">下一页</a>
 	</div>
 	-->
-	<div class="pagination">
-		<ul>
-			<li><a href="">1</a></li>
-			<li><a href="">...</a></li>
-			<li><a href="">4</a></li>
-			<li><a href="">5</a></li>
-			<li class="current"><a href="">6</a></li>
-			<li><a href="">7</a></li>
-			<li><a href="">8</a></li>
-			<li><a href="">...</a></li>
-			<li><a href="">11</a></li>
-		</ul>
-	</div>
+	<!--<div class="pagination">-->
+		<!--<ul>-->
+			<!--<li><a href="">1</a></li>-->
+			<!--<li><a href="">...</a></li>-->
+			<!--<li><a href="">4</a></li>-->
+			<!--<li><a href="">5</a></li>-->
+			<!--<li class="current"><a href="">6</a></li>-->
+			<!--<li><a href="">7</a></li>-->
+			<!--<li><a href="">8</a></li>-->
+			<!--<li><a href="">...</a></li>-->
+			<!--<li><a href="">11</a></li>-->
+		<!--</ul>-->
+	<!--</div>-->
 {% endblock main %}

@@ -4,7 +4,8 @@ from django.utils.six import python_2_unicode_compatible
 
 # Create your models here.
 
-@python_2_unicode_compatible
+
+@python_2_unicode_compatible  # 兼容python2
 class Comment(models.Model):
 
 	name = models.CharField(max_length=100)
